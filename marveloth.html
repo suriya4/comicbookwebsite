@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="about.css">
+    <meta name="viewport" content="width=device-width, initial-sclae=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Comic Stan</title>
+    <style>html, #page { padding:0; margin:0;}
+			body { margin:0; padding:0; width:100%; color:#959595; font:normal 12px/2.0em Sans-Serif;} 
+			h1, h2, h3, h4, h5, h6 {color:darkred;}
+			#header, #footer, #top-nav, #content, #content #contentbar, #content #sidebar { margin:0; padding:0;}
+			
+			* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;margin-left: 550px;}
+.hover-item {
+				Transition: 0.3s;
+			}
+			.hover-item:hover {
+				transform:translate(0,-10px);
+			}
+
+/* Caption text */
+.text {
+  color: #000000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 450px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("C:\Users\suriy\OneDrive\Desktop\comic front\invisible.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* .zoom {
+  transition: 0.3s
+}
+.zoom:hover {
+  transform: translate(0,-13px);} */
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial;
+}
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+.row {
+  border-radius:20px;
+  margin: 8px -16px;
+  
+  
+}
+.row,
+.row > .column {
+  padding: 8px;
+}
+.column {
+  float: left;
+  width: 20%;
+  display: none; 
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  width:20px ;
+}
+.content {
+  background-color: white;
+  padding: 10px;
+}
+.show {
+  display: block;
+}
+.btn {
+  border:5;
+  outline:0;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: white;
+}
+.btn.active {
+  background-color: #666;
+   color: white;
+}
+.zoom {
+  transition: 0.3s
+}
+.zoom:hover {
+  transform: translate(0,-13px);}
+  .button {
+  border-radius: 2px;
+  background-color:#181717;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 7px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  height: 6%;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+a{
+  color: red;
+  text-decoration: none;
+}
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+  
+}
+.filterDiv {
+  float: left;
+  background-color: #2196F3;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+ body{
+	/* background-image: url("#"); */
+	background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-position: center;
+} 
+/* ##footer */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+  font-family: Open Sans;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: #333;
+  height: 50vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}	
+			/* Logo */
+			#logo { padding:0; width:auto; float:left;}
+			#logo h1 a, h1 a:hover { color:darkred; text-decoration:none;}
+			#logo h1 span { color:#f8dbdb;}
+
+			/* Header */
+			#header { background:rgb(9, 9, 9); }
+			#header-inner { margin:0 auto; padding:0; width:970px; }
+			
+			/* Feature */
+			.feature { background:red;padding:18px;}
+			.feature-inner { margin:auto;width:970px; }
+			.feature-inner h1 {color:#f8dbdb;font-size:32px;}
+			
+			/* Menu */
+			#top-nav { margin:0 auto; padding:0px 0 0; height:37px; float:right;}
+			#top-nav ul { list-style:none; padding:0; height:37px; float:left;}
+			#top-nav ul li { margin:0; padding:0 0 0 8px; float:left;}
+			#top-nav ul li a { display:block; margin:0; padding:8px 20px; color:red; text-decoration:none;}
+			#top-nav ul li.active a, #top-nav ul li a:hover { color:#b99494;}
+			
+			/* Content */
+			#content-inner { margin:0 auto; padding:10px 0; width:970px;}
+			#content #contentbar { margin:0; padding:0; float:right; width:760px;}
+			#content #contentbar .article { margin:0 0 24px; padding:0 20px 0 15px; }
+			#content #sidebar { padding:0; float:left; width:200px;}
+			#content #sidebar .widget { margin:0 0 12px; padding:8px 8px 8px 13px;line-height:1.4em;}
+			#content #sidebar .widget h3 a { text-decoration:none;}
+			#content #sidebar .widget ul { margin:0; padding:0; list-style:none; color:#959595;}
+			#content #sidebar .widget ul li { margin:0;}
+			#content #sidebar .widget ul li { padding:4px 0; width:185px;}
+			#content #sidebar .widget ul li a { color:crimson; text-decoration:none; margin-left:-16px; padding:4px 8px 4px 16px;}
+			#content #sidebar .widget ul li a:hover { color:#060606; font-weight:bold; text-decoration:none;}
+			
+			/* Footer */
+			#footer { background:rgb(10, 10, 10);}
+			#footer-inner { margin:auto; text-align:center; padding:12px; width:922px;}
+			#footer a {color:red;text-decoration:none;}
+			
+			/* Clear both sides to assist with div alignment  */
+			.clr { clear:both; padding:0; margin:0; width:100%; font-size:0px; line-height:0px;}
+		</style>
+		<script type="text/javascript">
+			/* =============================
+			This script generates sample text for the body content. 
+			You can remove this script and any reference to it. 
+			 ============================= */
+			//var bodyText=["The smaller your reality, the more convinced you are that you know everything.", "If the facts don't fit the theory, change the facts.", "The past has no power over the present moment.", "This, too, will pass.", "</p><p>You will not be punished for your anger, you will be punished by your anger.", "Peace comes from within. Do not seek it without.", "<h2>Heading</h2><p>The most important moment of your life is now. The most important person in your life is the one you are with now, and the most important activity in your life is the one you are involved with now."]
+			function generateText(sentenceCount){
+				for (var i=0; i<sentenceCount; i++)
+				document.write(bodyText[Math.floor(Math.random()*7)]+" ")
+			}
+			
+		</script>
+	</head>
+	<head>
+		<title>W3.CSS</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<style>
+		.mySlides {display:none;}
+		</style>
+		</head>
+<body>
+	
+		<div id="page">
+			<header id="header">
+				<div id="header-inner">	
+					<div id="logo">
+						<h1><a href="comicfront.html">Comic<span>stan</span></a></h1>
+					</div>
+					<div id="top-nav">
+						<ul>
+						<li><a href="about.html">About</a></li>
+						
+						<div class="w3-dropdown-hover">
+                            <button class="w3-button"><li style="color: red;"><a href="other comics.html"> Other Comics</a></li></button>							<div class="w3-dropdown-content w3-bar-block w3-card-4">
+                                <a href="marveloth.html" class="w3-bar-item w3-button">Marvel</a>
+                                <a href="dcoth.html" class="w3-bar-item w3-button">DC</a>
+                                <a href="darkhorseoth.html" class="w3-bar-item w3-button">DarkHorse</a>
+                                <a href="deoth.html" class="w3-bar-item w3-button">Dynamite Entertainment</a>
+                                <a href="icoth.html" class="w3-bar-item w3-button">Image comics</a>
+                                <a href="icoth.html" class="w3-bar-item w3-button">Valiant comics</a>
+                                <a href="boomoth.html" class="w3-bar-item w3-button">Boom Studios</a>
+                                <a href="boomoth.html" class="w3-bar-item w3-button">Chapter house</a>
+							</div>
+						  </div>
+						<li  style="float:right"><a href="index.html">Sign in</a></li>
+						</ul>
+					</div>
+
+					<div class="clr"></div>
+				</div>          
+			</header>
+      <div style="background-color: rgb(235, 223, 223); background-image: url(invisible.jpg);background-repeat: no-repeat;background-size: 100% 100%; background-blend-mode:soft-light;">		
+
+			<div class="feature">
+				<div class="feature-inner">
+				<h1></h1>
+				</div>
+			</div>
+
+
+			
+<html>
+
+  <!-- <div id="page">
+			<header id="header">
+				<div id="header-inner">	
+					<div id="logo">
+						<h1><a href="comic front.html">Comic<span>stan</span></a></h1>
+					</div>
+					<div id="top-nav">
+						<ul>
+						<li><a href="about.html">About</a></li>
+						<li><a href="other comics.html">Other comics</a></li>
+					 <div class="w3-dropdown-hover">
+							<button class="w3-button"></button>
+							<div class="w3-dropdown-content w3-bar-block w3-card-4">
+							  <a href="#" class="w3-bar-item w3-button">Marvel</a>
+							  <a href="#" class="w3-bar-item w3-button">DC</a>
+							  <a href="#" class="w3-bar-item w3-button">DarkHorse</a>
+							  <a href="#" class="w3-bar-item w3-button">Dynamite Entertainment</a>
+							  <a href="#" class="w3-bar-item w3-button">Image comics</a>
+							  <a href="#" class="w3-bar-item w3-button">Valiant comics</a>
+							  <a href="#" class="w3-bar-item w3-button">Boom Studios</a>
+							  <a href="#" class="w3-bar-item w3-button">Chapter house</a>
+							</div>
+						  </div> -->
+						<!-- <li  style="float:right"><a href="C:\Users\suriy\OneDrive\Desktop\comic front\public\index.html">Sign in</a></li>
+						</ul>
+					</div>
+
+					<div class="clr"></div>
+				</div>          
+			</header>
+      <div style="background-color: rgb(235, 223, 223); background-image: url(invisible.jpg);background-repeat: no-repeat;background-size: 100% 100%; background-blend-mode:soft-light;">		
+
+			<div class="feature">
+				<div class="feature-inner">
+				<h1></h1>
+				</div>
+			</div>
+
+  </head> --> 
+  <body>
+	<html>
+
+
+<body>
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> SHOW ALL</button>
+        <button class="btn" onclick="filterSelection('now trending')"> NOW TRENDING</button>
+		<div class="zoom">
+			
+			<div style="float:left; font-family: Arial;">
+				<a href="daredevilcom.html">
+			  <img src="black adam.jpg" alt="profile"  style="width:200px;height:200px; margin-left:68px;"><p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Rs.890</p></a>
+			  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button class="button"><span><a href="/billing">Buy to read</a></span></button>
+			  <p align = "center" style="color: darkolivegreen;font-size: x-large;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Daredevil</p>
+				
+			</div></div>
+			<div class="zoom">
+				
+			<div style="float:left ; margin-left: 150px; font-family: Arial;">
+				<a href="ghostridercom.html">
+					<img src="wonder woman.jpg" alt="profile"  style="width:200px;height:200px; margin-left:60px;"><p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Rs.650</p></a>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button class="button"><span><a href="/billing">Buy to read</a></span></button>
+			  <p align = "center" style="color: darkolivegreen;font-size: x-large;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Ghost Rider</p>
+			
+			</div></div>
+			<div class="zoom">
+				
+			<div style="float:left ; margin-left: 150px; font-family: Arial;">
+				<a href="daredevilcom.html">
+			  <img src="darkhorse1.jpg" alt="profile"  style="width:200px;height:200px; margin-left:60px;"><p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Rs.990</p></a>
+			  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button class="button"><span><a href="/billing">Buy to read</a></span></button>
+			  <p align = "center" style="color: darkolivegreen;font-size: x-large;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Eternals</p>
+			
+			<h4 align = "center">&emsp;&emsp;&emsp;</h4>
+			</div></div>
+			<div class="zoom">
+				
+			<div style="float:left ; margin-left: 150px; font-family: Arial;">
+				<a href="daredevilcom.html">
+					<img src="darkhorse7.jpg" alt="profile"  style="width:200px;height:200px; margin-left:50px;"><p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Rs.1090</p></a>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button class="button"><span><a href="/billing">Buy to read</a></span></button>
+			  <p align = "center" style="color: darkolivegreen;font-size: x-large;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">X-men</p>
+			
+			</div></div>		
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<div class="zoom">
+				
+				<div style="float:left; font-family: Arial;">
+					<a href="daredevilcom.html">
+				  <img src="darkhorse9.webp" alt="profile"  style="width:200px;height:200px; margin-left:68px;"><p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Rs.500</p></a>
+				  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button class="button"><span><a href="/billing">Buy to read</a></span></button>
+				  <p align = "center" style="color: darkolivegreen;font-size: x-large;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Gambit</p>
+				
+				</div></div>
+				<div class="zoom">
+					
+				<div style="float:left ; margin-left: 150px; font-family: Arial;">
+					<a href="daredevilcom.html">
+						<img src="darkhorse5.jpg" alt="profile"  style="width:200px;height:200px; margin-left:60px;"><p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Rs.599</p></a>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button class="button"><span><a href="/billing">Buy to read</a></span></button>
+				  <p align = "center" style="color: darkolivegreen;font-size: x-large;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Namor The Sub-Mariner</p>
+				
+				</div></div>
+				<div class="zoom">
+					
+				<div style="float:left ; margin-left: 150px; font-family: Arial;">
+					<a href="daredevilcom.html">
+						<img src="batman who laughs.jpg" alt="profile"  style="width:200px;height:200px; margin-left:60px;"><p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Rs.249</p></a>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button class="button"><span><a href="/billing">Buy to read</a></span></button>
+				  <p align = "center" style="color: darkolivegreen;font-size: x-large;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Peter Cannon</p>
+				
+				<h4 align = "center">&emsp;&emsp;&emsp;</h4>
+				</div></div>
+				<div class="zoom">
+					
+				<div style="float:left ; margin-left: 150px; font-family: Arial;">
+					<a href="daredevilcom.html">
+						<img src="new77.jpg" alt="profile"  style="width:200px;height:200px; margin-left:50px;"><p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Rs.369</p></a>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button class="button"><span><a href="/billing">Buy to read</a></span></button>
+				  <p align = "center" style="color: darkolivegreen;font-size: x-large;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">James Bond 007</p>
+				
+				</div></div>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+			<div class="zoom">
+				
+				<div style="float:left; font-family: Arial;">
+					<a href="daredevilcom.html">
+						<img src="new15.jpg" alt="profile"  style="width:200px;height:200px; margin-left:68px;"><p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Rs.499</p></a>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button class="button"><span><a href="/billing">Buy to read</a></span></button>
+				  <p align = "center" style="color: darkolivegreen;font-size: large;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Collector</p>
+				
+				</div></div>
+				<div class="zoom">
+					
+				<div style="float:left ; margin-left: 150px; font-family: Arial;">
+					<a href="daredevilcom.html">
+						<img src="new23.jpg" alt="profile"  style="width:200px;height:200px; margin-left:60px;"><p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Rs.679</p></a>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button class="button"><span><a href="/billing">Buy to read</a></span></button>
+				  <p align = "center" style="color: darkolivegreen;font-size: large;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Lord Of The Jungle (volume 2)</p>
+				
+				</div></div>
+				
+				<div class="zoom">
+					
+				<div style="float:left ; margin-left: 150px; font-family: Arial;">
+					<a href="daredevilcom.html">
+						<img src="new16.jpg" alt="profile"  style="width:200px;height:200px; margin-left:60px;"><p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Rs.500</p></a>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button class="button"><span><a href="/billing">Buy to read</a></span></button>
+				  <p align = "center" style="color: darkolivegreen;font-size:large;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Black Hammer (reborn edition)</p>
+				
+				<h4 align = "center"></h4>
+				</div></div>
+				<div class="zoom">
+					
+				<div style="float:left ; margin-left: 150px; font-family: Arial;">
+					<a href="daredevilcom.html">
+						<img src="new6.jpg" alt="profile"  style="width:200px;height:200px; margin-left:50px;"><p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Rs.600</p></a>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button class="button"><span><a href="/billing">Buy to read</a></span></button>
+				  <p align = "center" style="color: darkolivegreen;font-size: large;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">All-Out Avengers</p>
+				 
+				</div></div>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+			</div>
+                   
+                      
+      
+      <script>
+        filterSelection("all") 
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("column");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {
+          element.className += " " + arr2[i];
+        }
+      }
+    }
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+    
+</body>
+<footer class="footer-distributed">
+
+	<div class="footer-left">
+
+		<h3>Comic<span>Stan</span></h3>
+
+		<p class="footer-links">
+			<a href="#" class="link-1">Home</a>
+			
+			<a href="#">Blog</a>
+		
+			<a href="#">Pricing</a>
+		
+			<a href="#">About</a>
+			
+			<a href="#">Faq</a>
+			
+			<a href="#">Contact</a>
+		</p>
+
+		<p class="footer-company-name">Comic Stan © 2022</p>
+	</div>
+
+	<div class="footer-center">
+
+		<div>
+			<i class="fa fa-map-marker"></i>
+			<p><span>69th Floor, Wayne Tower</span>Gotham City<span>India</p>
+		</div>
+
+		<div>
+			<i class="fa fa-phone"></i>
+			<p>91+ 9345965496</p>
+		</div>
+
+		<div>
+			<i class="fa fa-envelope"></i>
+			<p><a href="mailto:support@company.com">Supe@cbmail.com</a></p>
+		</div>
+
+	</div>
+
+	<div class="footer-right">
+
+		
+
+
+			
+		<div class="footer-icons">
+
+			<a href="#"><i class="fa fa-facebook"> </i></a>
+			<a href="#"><i class="fa fa-twitter"></i></a>
+			<a href="#"><i class="fa fa-linkedin"></i></a>
+			<a href="#"><i class="fa fa-github"></i></a>
+
+		</div>
+
+	</div>
+
+</footer>
